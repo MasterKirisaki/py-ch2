@@ -1,0 +1,10 @@
+f = open('data','wb')
+txt = bytes('ยินดรต้อนรับสู้ Python \n','utf-8')
+txt = bytes('โดย ณัฐพล แก้วสระคู','utf-8')
+f.write(txt)
+f.close()
+
+print("อ่านข้อมูลจาก binary file \n")
+f = open('data','rb')
+print(f.read(50))
+f.clsoe()
